@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS -->
+    <script src="lib/jquery.js"></script>
+    <script src="lib/jquery.mobile-1.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/jquery.mobile-1.2.1.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+
+    <title>Todo-List</title>
+</head>
+<body>
+    <div data-role="page">
+
+        <div data-role="header">
+
+        </div>
+
+        <div  role="main" class="ui-content">
+            <form method="post">
+                <label for="task">
+                    Nom de la tâche:
+                    <input id="task" value="" placeholder="Créer une tâche" type="text">
+                </label>
+                <input id="add"  type="button" value="Ajouter" onclick="addTask(this.id)">
+                <input type="button" value="Réinitialiser" onclick="resetTasks()">
+            </form>
+            <ul data-role="listview" data-insert="true" id="listTasks">
+            <li class="swipetest">Manger</li>
+            </ul>
+        </div>
+
+        <div data-role="footer">
+
+        </div>
+
+    </div>
+</body>
+</html>

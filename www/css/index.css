@@ -1,0 +1,25 @@
+label {
+    text-align: center;
+}
+.terminatedTasks{
+    text-decoration: line-through;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    font-size: 16px;
+  
+  }.li{
+ margin-right: 50px;
+ float: left;
+ margin-left: 10px;
+  }
+  .div{
+    margin-top: 5px;
+    display: inline-block;
+  }
